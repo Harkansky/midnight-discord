@@ -211,11 +211,11 @@
         --polls-victor-fill: color-mix(in hsl, var(--green-2), transparent 90%);
 
         --card-primary-bg: var(--bg-3);
-        --card-secondary-bg: red;
+        --card-secondary-bg: var(--bg-2);
         --channel-icon: var(--text-4);
         --channels-default: var(--text-4);
 
-        --header-primary: var(--text-3);
+        --header-primary: var(--text-2);
         --header-secondary: var(--text-4);
         --header-muted: var(--text-4);
 
@@ -383,6 +383,9 @@
         .botTagRegular__82f07 /* bot tag */ {
             background-color: var(--accent-2);
         }
+        .botTagOP__82f07 /* forum post op tag */ {
+            color: var(--text-0);
+        }
 
         .container__87bf1 /* settings checkbutton background */ {
             background-color: var(--bg-1) !important;
@@ -455,7 +458,8 @@
         .message_fcf29c /* you have unsaved settings message */,
         .friendRequestsButton__523aa .base__2b1f5 /* inbox friend request number */,
         .textBadge__2b1f5[style='background-color: var(--background-accent);'],
-        .tooltipBlack__382e7 /* server boost tooltip */ {
+        .tooltipBlack__382e7 /* server boost tooltip */,
+        .colorable_f1ceac.experimentDark_f1ceac, .colorable_f1ceac.experimentDark_f1ceac .centerIcon_f1ceac /* vc buttons */ {
             color: var(--text-3);
         }
         .status__2f4f7 path[fill='var(--white)'],
@@ -554,6 +558,10 @@
             border-color: var(--bg-2);
         }
 
+        .flash__03436[data-flash=true] /* reply message flash */ {
+            background: var(--background-message-highlight);
+        }
+
         /* status indicators */
         rect[fill='#83838b'] {
             fill: var(--offline);
@@ -562,25 +570,28 @@
             background-color: var(--offline) !important;
         }
         rect[fill='#43a25a'],
-        path[fill='#43a25a'] /* status activity icon */ {
+        path[fill='#43a25a'] /* status activity icon */,
+        .vc-platform-indicator > svg[fill="#43a25a"] {
             fill: var(--online);
         }
-        .status_a423bd[style='background-color: rgb(68, 162, 91);'] {
+        .status_a423bd[style='background-color: rgb(67, 162, 90);'] {
             background-color: var(--online) !important;
         }
-        rect[fill='#ca9654'] {
+        rect[fill='#ca9654'],
+        .vc-platform-indicator > svg[fill='#ca9654'] {
             fill: var(--idle);
         }
         .status_a423bd[style='background-color: rgb(201, 150, 86);'] {
             background-color: var(--idle) !important;
         }
-        rect[fill='#d83a42'] {
+        rect[fill='#d83a42'],
+        .vc-platform-indicator > svg[fill='#d83a42'] {
             fill: var(--dnd);
         }
         .status_a423bd[style='background-color: rgb(216, 58, 66);'] {
             background-color: var(--dnd) !important;
         }
-        rect[fill='#593695'] {
+        rect[fill='#9147ff'] {
             fill: var(--streaming);
         }
         div[style='display: flex; justify-content: center; align-items: center; border-radius: 5px; background-color: rgb(67, 162, 90); height: 10px; width: 25px;'] {
